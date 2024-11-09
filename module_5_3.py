@@ -32,49 +32,67 @@ class House:
     def __eq__(self, other):
         if isinstance(other, House):
             return self.number_of_floors == other.number_of_floors
+        else:
+            print('Ошибка ввода данных: Неверный тип')
 
 
     def __lt__(self, other):
         if isinstance(other, House):
             return self.number_of_floors < other.number_of_floors
+        else:
+            print('Ошибка ввода данных: Неверный тип')
 
 
     def __le__(self, other):
         if isinstance(other, House):
             return self.number_of_floors <= other.number_of_floors
+        else:
+            print('Ошибка ввода данных: Неверный тип')
 
 
     def __gt__(self, other):
         if isinstance(other, House):
             return self.number_of_floors > other.number_of_floors
+        else:
+            print('Ошибка ввода данных: Неверный тип')
 
 
     def __ge__(self, other):
         if isinstance(other, House):
             return self.number_of_floors >= other.number_of_floors
+        else:
+            print('Ошибка ввода данных: Неверный тип')
 
 
     def __ne__(self, other):
         if isinstance(other, House):
             return self.number_of_floors != other.number_of_floors
+        else:
+            print('Ошибка ввода данных: Неверный тип')
 
 
     def __add__(self, value):
         if isinstance(value, int):
             self.number_of_floors = self.number_of_floors + value
             return self
+        else:
+            print('Ошибка ввода данных: Неверный тип')
 
 
     def __radd__(self, value):
         if isinstance(value, int):
             self.number_of_floors = self.number_of_floors + value
             return self
+        else:
+            print('Ошибка ввода данных: Неверный тип')
 
 
     def __iadd__(self, value):
         if isinstance(value, int):
             self.number_of_floors += value
             return self
+        else:
+            print('Ошибка ввода данных: Неверный тип')
 
 
 h1 = House('ЖК Эльбрус', 10)
